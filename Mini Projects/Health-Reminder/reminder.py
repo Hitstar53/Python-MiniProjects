@@ -54,11 +54,11 @@ def logging(type):
 
 def remtime():
     hrlist = ['09','10','11','12','13','14','15','16','17']
-    minlist3 = ['04','19','34','49']
-    minlist2 = ['32','02']
+    minlist3 = ['55','40','25','10']
+    minlist2 = ['35','05']
     minlist1 = ['00']
-    #seclist = ['00','01','02','03','04','05']
     wc,ec,pc = 0,0,0
+    print("THE HEALTH REMINDER SYSTEM IS NOW RUNNING!(9 AM TO 5 PM")
     while True:
         temp = datetime.datetime.now()
         temp1 = temp.strftime("%H:%M:%S")
@@ -78,13 +78,31 @@ def remtime():
             ec += 1
             continue
         elif temp1[0:2] in hrlist and temp1[3:5] in minlist3 and temp1[6:8] == '00':
-            type = 'physical'
-            playfile(type)
-            logging(type)
-            pc += 1
-            continue
+            if temp1[3:5] == '55' and pc in [0,4,8]:
+                type = 'physical'
+                playfile(type)
+                logging(type)
+                pc += 1
+                continue
+            elif temp1[3:5] == '40' and pc in [1,5,9]:
+                type = 'physical'
+                playfile(type)
+                logging(type)
+                pc += 1
+                continue
+            elif temp1[3:5] == '25' and pc in [2,6]:
+                type = 'physical'
+                playfile(type)
+                logging(type)
+                pc += 1
+                continue
+            elif temp1[3:5] == '10' and pc in [3,7]:
+                type = 'physical'
+                playfile(type)
+                logging(type)
+                pc += 1
+                continue
         else:
-            print("program is running!")
             continue
 
 if __name__ == '__main__':
