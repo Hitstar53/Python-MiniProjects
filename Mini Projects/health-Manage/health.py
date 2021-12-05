@@ -14,57 +14,57 @@ while True:
     if a:
         if b == 0:
             if c:
-                with open("D:\\python problems\\health-Manage\\hammad-e.txt") as hame:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\hammad-e.txt") as hame:
                     print(hame.read())
             else:
-                with open("D:\\python problems\\health-Manage\\hammad-f.txt") as hamf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\hammad-f.txt") as hamf:
                     print(hamf.read())
         elif b == 1:
             if c:
-                with open("D:\\python problems\\health-Manage\\harry-e.txt") as hare:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\harry-e.txt") as hare:
                     print(hare.read())
             else:
-                with open("D:\\python problems\\health-Manage\\harry-f.txt") as harf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\harry-f.txt") as harf:
                     print(harf.read())
         elif b == 2:
             if c:
-                with open("D:\\python problems\\health-Manage\\rohan-e.txt") as rohe:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\rohan-e.txt") as rohe:
                     print(rohe.read())
             else:
-                with open("D:\\python problems\\health-Manage\\rohan-f.txt") as rohf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\rohan-f.txt") as rohf:
                     print(rohf.read())
     else:
         d = input("What do you want to log?\n")
         if b == 0:
             if c:
-                with open("D:\\python problems\\health-Manage\\hammad-e.txt", "a") as hame:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\hammad-e.txt", "a") as hame:
                     hame.write(get_date())
                     print(hame.write(d))
                     hame.write("\n")
             else:
-                with open("D:\\python problems\\health-Manage\\hammad-f.txt", "a") as hamf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\hammad-f.txt", "a") as hamf:
                     hamf.write(get_date())
                     print(hamf.write(d))
                     hamf.write("\n")
         elif b == 1:
             if c:
-                with open("D:\\python problems\\health-Manage\\harry-e.txt", "a") as hare:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\harry-e.txt", "a") as hare:
                     hare.write(get_date())
                     print(hare.write(d))
                     hare.write("\n")
             else:
-                with open("D:\\python problems\\health-Manage\\harry-f.txt", "a") as harf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\harry-f.txt", "a") as harf:
                     harf.write(get_date())
                     print(harf.write(d))
                     harf.write("\n")
         elif b == 2:
             if c:
-                with open("D:\\python problems\\health-Manage\\rohan-e.txt", "a") as rohe:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\rohan-e.txt", "a") as rohe:
                     rohe.write(get_date())
                     print(rohe.write(d))
                     rohe.write("\n")
             else:
-                with open("D:\\python problems\\health-Manage\\rohan-f.txt", "a") as rohf:
+                with open("D:\\Python-MiniProjects\\Mini Projects\\health-Manage\\rohan-f.txt", "a") as rohf:
                     rohf.write(get_date())
                     print(rohf.write(d))
                     rohf.write("\n")
