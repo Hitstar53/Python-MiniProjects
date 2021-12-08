@@ -22,7 +22,7 @@ def root(n,m):
 def perc(n,m):
     return (n/m)*100
 
-def calculate(fir,sec):
+def calculate(fir,sec,cal):
     '''
     Implement operation
     '''
@@ -41,7 +41,8 @@ def calculate(fir,sec):
     elif cal == "%":
         print(f"{fir} % {sec} = {perc(fir,sec)} %")
 
-if __name__ == '__main__':
+def simple_cal():
+    print("This is the Simple Mode:")
     while True:
         cal = input("Select an option:\nAdd -> + , Sub -> -\nMul -> * , Div -> /\nPow -> ^ , Rt -> ^/\nPerc -> % , Exit -> e\n")
         if cal not in ['+','-','*','/','%','^','^/','e']:
@@ -51,9 +52,12 @@ if __name__ == '__main__':
             break
         fir,sec = input("Enter 2 numbers:\n").split()
         fir,sec = float(fir),float(sec)
-        calculate(fir,sec)
+        calculate(fir,sec,cal)
         recal = input("Do you want to calculate again?(yes/no)\n")
         if recal.lower() == "yes":
             continue
         else:
             break
+
+if __name__ == '__main__':
+    simple_cal()

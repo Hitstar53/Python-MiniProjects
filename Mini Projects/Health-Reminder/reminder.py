@@ -2,7 +2,6 @@
 Health Reminder System
 '''
 import datetime
-import time
 import pygame
 
 def get_date():
@@ -24,16 +23,6 @@ def playfile(type):
             break
         else:
             continue
-
-'''
-def remtype(type):
-    if type == 'water':
-        playfile(type)
-    elif type == 'eye':
-        playfile(type)
-    elif type == 'physical':
-        playfile(type)
-'''
 
 def logging(type):
     if type == 'water':
