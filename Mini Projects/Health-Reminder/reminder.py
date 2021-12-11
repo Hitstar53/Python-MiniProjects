@@ -12,7 +12,7 @@ def get_date():
 
 def playfile(type):
     pygame.mixer.init()
-    pygame.mixer.music.load(f"D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\{type}.mp3")
+    pygame.mixer.music.load(f"D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\audios\\{type}.mp3")
     pygame.mixer.music.set_volume(0.7)
     pygame.mixer.music.play(-1)
     query = ' '
@@ -26,17 +26,17 @@ def playfile(type):
 
 def logging(type):
     if type == 'water':
-        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\drink_log.txt','a') as w:
+        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\logging\\drink_log.txt','a') as w:
             w.write(get_date())
             w.write("You drank 0.5 L of water!")
             w.write("\n")
     elif type == 'eye':
-        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\eye_log.txt','a') as e:
+        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\logging\\eye_log.txt','a') as e:
             e.write(get_date())
             e.write("You did some eye exercise!")
             e.write("\n")
     elif type == 'physical':
-        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\phys_log.txt','a') as p:
+        with open('D:\\Python-MiniProjects\\Mini Projects\\health-Reminder\\logging\\phys_log.txt','a') as p:
             p.write(get_date())
             p.write("You did some physical activity!")
             p.write("\n")
