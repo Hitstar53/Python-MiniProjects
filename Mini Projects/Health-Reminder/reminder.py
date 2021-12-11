@@ -47,7 +47,7 @@ def remtime():
     minlist2 = ['35','05']
     minlist1 = ['00']
     wc,ec,pc = 0,0,0
-    print("THE HEALTH REMINDER SYSTEM IS NOW RUNNING!(9 AM TO 5 PM")
+    print("THE HEALTH REMINDER SYSTEM IS NOW RUNNING!(9 AM TO 5 PM)")
     while True:
         temp = datetime.datetime.now()
         temp1 = temp.strftime("%H:%M:%S")
