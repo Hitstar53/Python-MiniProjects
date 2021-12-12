@@ -7,3 +7,4 @@ Some fun Python mini projects:
 - Health Management System
 - Heath Reminder System
 - Random Password Generation Sytem
+- War Game
