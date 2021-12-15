@@ -8,3 +8,4 @@ Some fun Python mini projects:
 - Heath Reminder System
 - Random Password Generation Sytem
 - War Game
+- BlackJack Game
