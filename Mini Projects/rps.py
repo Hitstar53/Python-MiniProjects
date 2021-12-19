@@ -31,7 +31,7 @@ def win_cond():
         print(f"Your Choice -> {plyr}\nComputer -> {comp}")
         print("You Lost the game! Better luck next time!")
 
-def start():
+def main():
     print("WELCOME TO RPS!")
     while True:
         win_cond()
@@ -43,4 +43,4 @@ def start():
             break
 
 if __name__ == '__main__':
-    start()
+    main()
