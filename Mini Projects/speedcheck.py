@@ -13,3 +13,4 @@ closest_server = s.get_closest_servers()
 print('\nClosest server:')
 for key,value in closest_server[1].items():
     print(key,' : ',value)
+    
